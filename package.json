@@ -39,5 +39,7 @@
     ]
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:Lvhau1529/Search_movie.git",
+  "author": "lvhau <levanhau150299@gmail.com>"
 }
