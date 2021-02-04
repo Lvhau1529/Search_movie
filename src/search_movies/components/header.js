@@ -22,6 +22,9 @@ const HeaderComponent = () => {
 					<Menu.Item key="/up-coming">
 						<NavLink to="/up-coming">Upcoming</NavLink>
 					</Menu.Item>
+					<Menu.Item key="/trending">
+						<NavLink to="/trending">Trending</NavLink>
+					</Menu.Item>
 					<Menu.Item key="/search">
 						<NavLink to="/search">Search</NavLink>
 					</Menu.Item>

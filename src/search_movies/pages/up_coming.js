@@ -8,7 +8,7 @@ import LoadingData from "../components/loading";
 
 const { Meta } = Card;
 
-const HomePage = () => {
+const UpcomingPage = () => {
   const [loadingHome, setLoadingHome] = useState(false);
   const [listMovies, setListMovies] = useState([]);
   const [page, setPage] = useState(1);
@@ -94,4 +94,4 @@ const HomePage = () => {
   );
 };
 
-export default React.memo(HomePage);
+export default React.memo(UpcomingPage);

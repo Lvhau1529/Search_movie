@@ -54,7 +54,7 @@ const HomePage = () => {
             fontWeight: "bold",
           }}
         >
-          Discover Movies
+          Welcome
         </h1>
         <Row style={{ marginTop: "5px" }}>
           {listMovies.map((item, index) => (

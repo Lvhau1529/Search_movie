@@ -72,6 +72,7 @@ const DetailMoviePage = () => {
                 ? detailMovie.images.backdrops.map((item, index) => (
                     <li key={index}>
                       <img
+                        style={{paddingRight: "10px", backgroundColor: "black"}}
                         src={`https://image.tmdb.org/t/p/w500${item.file_path}`}
                         alt=""
                       />

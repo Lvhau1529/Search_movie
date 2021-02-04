@@ -32,6 +32,13 @@ export const getDataMoviesUpComing = async (page = 1) => {
   return result;
 };
 
+export const getDataMoviesTrending = async (page = 1) => {
+  const url = `https://api.themoviedb.org/3/trending/all/day?api_key=f379b750fd188bc3ec72f0760d768302`;
+  const res = await axios.get(url);
+  const result = (await res.status) === 200 ? res.data : [];
+  return result;
+};
+
 export const getDataMoviesById = async (id = 0) => {
   const url = `https://api.themoviedb.org/3/movie/${id}?api_key=0aecc06bb4fadb06b5f071fef0c2ce6d&language=en-US&append_to_response=videos,images&include_image_language=en-US,null`;
   const response = await axios.get(url);

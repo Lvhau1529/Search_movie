@@ -125,7 +125,6 @@ const SearchPage = () => {
             </Col>
           </Row>
         ) : null}
-        
       </LayoutPage>
     </>
   );

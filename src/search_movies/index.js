@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeComponent from "./pages/home";
 import UpcomingComponent from "./pages/up_coming";
+import TrendingComponent from "./pages/top_trending"
 import SearchComponent from "./pages/search";
 import DetailComponent from "./pages/detail_movies";
 
@@ -14,6 +15,9 @@ const Movies = () => {
         </Route>
         <Route path="/up-coming">
           <UpcomingComponent />
+        </Route>
+        <Route path="/trending">
+          <TrendingComponent />
         </Route>
         <Route path="/search">
           <SearchComponent />
