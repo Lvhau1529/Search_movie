@@ -9,8 +9,8 @@ function addDays(date, days) {
 
 export const getDataMoviesHome = async (page = 1) => {
   const url = `https://api.themoviedb.org/3/discover/movie?api_key=f379b750fd188bc3ec72f0760d768302&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`;
-  const res = await axios.get(url);
-  const result = (await res.status) === 200 ? res.data : [];
+  const response = await axios.get(url);
+  const result = (await response.status) === 200 ? response.data : [];
   return result;
 };
 
@@ -34,8 +34,8 @@ export const getDataMoviesUpComing = async (page = 1) => {
 
 export const getDataMoviesTrending = async (page = 1) => {
   const url = `https://api.themoviedb.org/3/trending/all/day?api_key=f379b750fd188bc3ec72f0760d768302`;
-  const res = await axios.get(url);
-  const result = (await res.status) === 200 ? res.data : [];
+  const response = await axios.get(url);
+  const result = (await response.status) === 200 ? response.data : [];
   return result;
 };
 
