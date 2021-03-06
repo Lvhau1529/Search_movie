@@ -26,7 +26,7 @@ export const getDataMoviesUpComing = async (page = 1) => {
 
   nextTime = moment(nextTime).utc().format("YYYY-MM-DD");
 
-  const url = `https://api.themoviedb.org/3/discover/movie?api_key=0aecc06bb4fadb06b5f071fef0c2ce6d&language=en-US&region=US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&release_date.gte=${today}&release_date.lte=${nextTime}&with_release_type=3|2`;
+  const url = `https://api.themoviedb.org/3/discover/movie?api_key=f379b750fd188bc3ec72f0760d768302&language=en-US&region=US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&release_date.gte=${today}&release_date.lte=${nextTime}&with_release_type=3|2`;
   const response = await axios.get(url);
   const result = (await response.status) === 200 ? response.data : [];
   return result;
@@ -40,14 +40,14 @@ export const getDataMoviesTrending = async (page = 1) => {
 };
 
 export const getDataMoviesById = async (id = 0) => {
-  const url = `https://api.themoviedb.org/3/movie/${id}?api_key=0aecc06bb4fadb06b5f071fef0c2ce6d&language=en-US&append_to_response=videos,images&include_image_language=en-US,null`;
+  const url = `https://api.themoviedb.org/3/movie/${id}?api_key=f379b750fd188bc3ec72f0760d768302&language=en-US&append_to_response=videos,images&include_image_language=en-US,null`;
   const response = await axios.get(url);
   const result = (await response.status) === 200 ? response.data : [];
   return result;
 };
 
 export const searchMovieByKeywords = async (keywords = "", page = 1) => {
-  const url = `https://api.themoviedb.org/3/search/movie?query=${keywords}&api_key=cfe422613b250f702980a3bbf9e90716&page=${page}`;
+  const url = `https://api.themoviedb.org/3/search/movie?query=${keywords}&api_key=f379b750fd188bc3ec72f0760d768302&page=${page}`;
   const response = await axios.get(url);
   const result = (await response.status) === 200 ? response.data : [];
   return result;
